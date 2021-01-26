@@ -15,3 +15,4 @@ Secure password generator as needed.
 3. Your secure password will be generated   
     `----> Here is your password: __*#9q71)tOhQ2GPk__`  
     
+If another password is generated with the same characteristics, it will not come the same as the previous one, they will be different passwords.
