@@ -13,6 +13,6 @@ Secure password generator as needed.
     `How many symbols would you like: 3`   
     `How many numbers would you like: 4`   
 3. Your secure password will be generated   
-    `----> Here is your password: __*#9q71)tOhQ2GPk__`  
+    `----> Here is your password: *#9q71)tOhQ2GPk`  
     
 If another password is generated with the same characteristics, it will not come the same as the previous one, they will be different passwords.
