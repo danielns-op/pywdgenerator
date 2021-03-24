@@ -10,7 +10,7 @@
 #    Date: 23/01/2021                        #
 # ########################################## #
 import generator as gen
-from time import sleep
+import os
 
 
 def start():
@@ -41,7 +41,16 @@ def menu():
     return result_pwd
 
 
-if __name__ == '__main__':
-    password = menu()
-    print(f'\n\n----> Here is your password: {password}\n')
-    print('-=' * 40)
+in_execution = True
+while in_execution:
+    if __name__ == '__main__':
+        password = menu()
+        print(f'\n\n----> Here is your password: {password}\n')
+        print('-=' * 40)
+
+        q_exit = str(input('Generate another password? [S/n]: ')).strip().lower()
+        if q_exit == 'n':
+            in_execution = False
+        else:
+            print('Invalid option, running the program.')
+            os.system('cls') if os.name == 'nt' else os.system('clear')
