@@ -50,7 +50,8 @@ while in_execution:
 
         q_exit = str(input('Generate another password? [S/n]: ')).strip().lower()
         if q_exit == 'n':
+            os.system('cls') if os.name == 'nt' else os.system('reset')
             in_execution = False
         else:
             print('Invalid option, running the program.')
-            os.system('cls') if os.name == 'nt' else os.system('clear')
+            os.system('cls') if os.name == 'nt' else os.system('reset')
